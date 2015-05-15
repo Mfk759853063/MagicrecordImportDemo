@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Arena" representedClassName="Arena" syncable="YES">
+        <attribute name="app_compare_method" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_description" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="app_icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invite_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leizhu_score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="result_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="show_method" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ArenaDetail" representedClassName="ArenaDetail" syncable="YES">
+        <relationship name="arena" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Arena" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="response.leitai"/>
+            </userInfo>
+        </relationship>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="response.game"/>
+            </userInfo>
+        </relationship>
+        <relationship name="player_result" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="response.player_result"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="app_icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_play" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="max_score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Leizhu" representedClassName="Leizhu" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="challenge_pm" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="challenge_state" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Arena" positionX="-63" positionY="-18" width="128" height="270"/>
+        <element name="ArenaDetail" positionX="-54" positionY="72" width="128" height="90"/>
+        <element name="Game" positionX="-45" positionY="81" width="128" height="120"/>
+        <element name="Leizhu" positionX="-27" positionY="99" width="128" height="90"/>
+        <element name="Player" positionX="-9" positionY="117" width="128" height="105"/>
+    </elements>
+</model>

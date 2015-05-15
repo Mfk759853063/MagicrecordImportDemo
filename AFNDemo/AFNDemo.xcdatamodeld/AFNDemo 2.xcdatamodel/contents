@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Arena" representedClassName="Arena" syncable="YES">
+        <attribute name="app_compare_method" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_description" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="app_icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="app_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Arena" positionX="-63" positionY="-18" width="128" height="195"/>
+    </elements>
+</model>
