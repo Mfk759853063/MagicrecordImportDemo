@@ -1,0 +1,2 @@
+# MagicrecordImportDemo
+Entity &lt;----JSON
